@@ -68,11 +68,30 @@
       box-shadow: 0 0 40px rgba(var(--accent-rgb), 0.06), 0 20px 60px rgba(0, 0, 0, 0.4);
     }
 
+    .logo-link {
+      display: block;
+      text-align: center;
+      margin-bottom: 16px;
+      text-decoration: none;
+    }
+
+    .logo {
+      height: 64px;
+      width: auto;
+      max-width: 80%;
+      filter: drop-shadow(0 0 12px rgba(var(--accent-rgb), 0.15));
+      transition: filter 0.2s;
+    }
+
+    .logo-link:hover .logo {
+      filter: drop-shadow(0 0 16px rgba(var(--accent-rgb), 0.3));
+    }
+
     .divider {
       width: 48px;
       height: 2px;
       background: var(--accent);
-      margin: 0 auto 24px;
+      margin: 0 auto 20px;
       opacity: 0.6;
     }
 
@@ -83,7 +102,7 @@
       letter-spacing: 0.25em;
       font-weight: 700;
       color: var(--accent);
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
     h1 {
@@ -300,6 +319,9 @@
 </head>
 <body>
   <main class="container">
+    <a class="logo-link" href="https://www.sharkitectdigital.com" aria-label="Sharkitect Digital">
+      <img src="logo.png" alt="Sharkitect Digital" class="logo" width="64" height="64" loading="eager">
+    </a>
     <div class="divider"></div>
     <p class="brand">SHARKITECT CARDS</p>
     <h1>Get Your Free Custom Digital Business Card</h1>
