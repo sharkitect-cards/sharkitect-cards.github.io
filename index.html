@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharkitect Cards</title>
+  <meta name="description" content="Custom digital business cards, built by Sharkitect Digital.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #1A1A1A;
+      color: #FFFFFF;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(41, 171, 226, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(41, 171, 226, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      padding: 48px 32px;
+      background: linear-gradient(180deg, #222222 0%, #1A1A1A 100%);
+      border: 1px solid rgba(41, 171, 226, 0.15);
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(41, 171, 226, 0.06), 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.75rem;
+      letter-spacing: 0.15em;
+      font-weight: 700;
+      color: #29ABE2;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #C7CCD4;
+      margin-bottom: 20px;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+    a {
+      color: #29ABE2;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    a:hover { opacity: 0.75; }
+    .muted {
+      color: #808285;
+      font-size: 0.85rem;
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: #29ABE2;
+      margin: 0 auto 24px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="divider"></div>
+    <h1>SHARKITECT CARDS</h1>
+    <p>Custom digital business cards, built by Sharkitect Digital.</p>
+    <p><a href="https://www.sharkitectdigital.com">Visit sharkitectdigital.com &rarr;</a></p>
+    <p class="muted">Looking for a specific card? Check the full URL you were given.</p>
+  </main>
+</body>
+</html>
